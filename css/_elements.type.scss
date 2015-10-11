@@ -1,0 +1,43 @@
+/*------------------------------------*\
+    #ELEMENTS TYPE
+\*------------------------------------*/
+
+blockquote {
+  position: relative;
+  border: 0;
+  font-size: 1.5em;
+  font-style: italic;
+  font-weight: 300;
+  color: lighten($color-text, 20%);
+}
+
+blockquote p {
+  font-weight: 300;
+  line-height: 1.25;
+}
+
+blockquote .small:before, 
+blockquote footer:before, 
+blockquote small:before {
+    content: '';
+}
+
+blockquote:before {
+    content: "";
+    display: block;
+    margin-bottom: 18px;
+    height: 8px;
+    width: 50%;
+    background-color: $color-brand;
+}
+
+/**
+ * Let's give a blockquote a different color.
+ */
+.quote-color-custom blockquote {
+  color: $color-custom-red;
+}
+
+.quote-color-custom blockquote:before {
+    background-color: $brand-color-light;
+}

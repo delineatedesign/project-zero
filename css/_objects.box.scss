@@ -1,0 +1,70 @@
+/*------------------------------------*\
+    #BOXES
+\*------------------------------------*/
+
+.o-box {
+    position: relative;
+}
+
+.o-box__absolute-wide {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+/**
+ * The .o-box-absolute__top-left and .o-box-absolute__top-right classes are 
+ * used with .o-wrapper-content__center wrapper.
+ *
+ * On larger screens we can pull out elements
+ * to sit to the left or right of the content.
+ * For example, add to a blockquote to float the quote to the top side of the content.
+ *
+ * The maths here depends on .o-wrapper-content__center being 50% wide.
+ */
+@media screen and (min-width: 960px) {
+.o-box-absolute__top-left,
+.o-box-absolute__top-right {
+    position: absolute;
+    top: 0;
+    width: 25%;
+    padding: $base-spacing-unit*2;
+}
+.o-box-absolute__top-left {
+    left: 0;
+}
+.o-box-absolute__top-right {
+    right: 0;
+}
+}
+
+/**
+ * The .o-box__enhance class is used with .o-wrapper-content__center wrapper.
+ * Because .o-wrapper-content__center is 50% wide on larger screens,
+ * we can use some easy maths to make an element inside stretch 100% width of screen.
+ *
+ * The maths here depends on .o-wrapper-content__center being 50% wide.
+ */
+.o-box__enhance {
+  @include clearfix(important);
+}
+
+@media (min-width: 960px) {
+.o-box__enhance {
+  width: 200%; 
+  margin-left: -50%;
+}
+
+.o-box__enhance-img {
+  width: 75%; 
+  float: left;
+}
+
+.o-box__enhance-content {
+  width: 25%; 
+  float: left; 
+  padding: 0 $base-spacing-unit;
+}
+}

@@ -1,0 +1,11 @@
+/*------------------------------------*\
+    #HEADINGS
+\*------------------------------------*/
+
+/**
+ * Headings 1–6.
+ */
+@include headings() {
+    @include font-weight(normal);
+    color: $color-headings;
+}

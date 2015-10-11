@@ -1,0 +1,54 @@
+/*------------------------------------*\
+      #HEADER
+\*------------------------------------*/
+
+.c-page-head {
+  @include clearfix(important);
+  position: relative;
+  background: $color-page-head-background; 
+  color: $color-text; 
+  padding: 0 $base-spacing-unit*2;
+  overflow: hidden;
+}
+
+
+.c-page-head .site-logo {
+  width: 200px;
+  height: 25px;
+}
+
+/*------------------------------------*\
+      #HEADER SOCIAL LINKS
+\*------------------------------------*/
+
+.c-page-head__social {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .c-page-head__social {
+    display: table;
+    float: right; 
+    height: 60px; 
+  }
+}
+
+.c-page-head__social--item {
+  display: table-cell; 
+  vertical-align: middle;
+}
+
+.c-page-head__social--item a, 
+.c-page-head__social--item a:visited {
+  color: $color-text; 
+  font-size: 32px;
+  display: inline-block; 
+  margin-left: $base-spacing-unit*.75;
+  outline: 0;
+}
+
+.c-page-head__social--item a:hover, 
+.c-page-head__social--item a:active, 
+.c-page-head__social--item a:focus {
+  color: $color-brand; 
+}
