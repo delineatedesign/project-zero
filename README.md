@@ -1,8 +1,9 @@
 ## Project Zero  
 
 HTML  
-Sass  
+CSS/Sass  
 JavasSript  
-Masonry Packery Layout  
-Scotch Panel Off Canvas Navigation  
-Gulp  
+Picturefill responsive images
+Masonry Packery layout  
+Scotch Panel 'Off Canvas' navigation  
+Gulp task runner  
