@@ -1,0 +1,19 @@
+/*------------------------------------*\
+    #LINKS
+\*------------------------------------*/
+
+a {
+    text-decoration: none;
+    color: $color-links;
+    cursor: pointer;
+    @include attention() {
+        text-decoration: underline;
+        color: $color-links;
+    }
+}
+
+a:visited {
+    text-decoration: none;
+    color: $color-links;
+    cursor: pointer;
+}

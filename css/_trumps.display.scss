@@ -1,0 +1,89 @@
+/*------------------------------------*\
+    #DISPLAY
+\*------------------------------------*/
+
+/**
+ * General helper classes for controlling display
+ */
+
+.u-display-none         { display: none !important; }
+.u-display-block        { display: block !important; }
+.u-display-inline       { display: inline !important; }
+.u-display-inline-block { display: inline-block !important; }
+
+.u-valign-top { vertical-align: top !important; }
+.u-valign-middle { vertical-align: middle !important; }
+.u-valign-bottom { vertical-align: bottom !important; }
+
+
+.color-light__bkg-opaque {
+  background: $color-white;
+  background: rgba(255,255,255,0.8);
+}
+
+/**
+ * Completely hide content from view and from screenreaders.
+ */
+.u-hide { display: none !important; }
+
+/**
+ * Hide content from view, but leave it accessible to screenreaders.
+ */
+.u-hide-visually {
+    position: absolute !important;
+    width:  1px !important;
+    height: 1px !important;
+    overflow: hidden !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+}
+
+.u-margin-0 {
+    margin: 0;
+}
+
+.u-padding-base {
+  padding: $base-spacing-unit;
+}
+
+.u-fa-padding-right {
+  padding-right: 0.25em;
+}
+
+/**
+ * Animate the opacity of elements.
+ */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+	opacity:0;  
+	-webkit-animation:fadeIn ease-in 1;  
+	animation:fadeIn ease-in 1;
+
+	-webkit-animation-fill-mode:forwards; 
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+
+	-webkit-animation-duration:1s;
+	-moz-animation-duration:1s;
+	animation-duration:1s;
+}
+
+.fade-in.fade-first {
+-webkit-animation-delay: 0.7s;
+-moz-animation-delay: 0.7s;
+animation-delay: 0.7s;
+}
+
+.fade-in.fade-second {
+-webkit-animation-delay: 1.2s;
+-moz-animation-delay:1.2s;
+animation-delay: 1.2s;
+}
+
+.fade-in.fade-third {
+-webkit-animation-delay: 2.8s;
+-moz-animation-delay: 2.8s;
+animation-delay: 2.8s;
+}

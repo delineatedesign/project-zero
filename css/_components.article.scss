@@ -1,0 +1,27 @@
+/*------------------------------------*\
+    #ARTCILE
+\*------------------------------------*/
+
+/**
+ * The wrappers for article main content
+ *
+ * .article__content-absolute is an inner wrap for an article list item
+ */
+
+.article,
+.article__content {
+    position: relative;
+} 
+    
+.article__content-absolute {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0; 
+}
+  
+.article__content-absolute:hover {
+    background: #231F20;
+    background: rgba(255,255,255,0.8);
+}

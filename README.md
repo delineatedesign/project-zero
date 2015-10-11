@@ -1,2 +1,8 @@
-# project-zero
-Sass and Gulp project w/ Packery
+## Project Zero  
+
+HTML  
+Sass  
+JavasSript  
+Masonry Packery Layout  
+Scotch Panel Off Canvas Navigation  
+Gulp  

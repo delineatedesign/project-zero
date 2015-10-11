@@ -1,0 +1,64 @@
+///*------------------------------------*\
+//    #COLORS
+//\*------------------------------------*/
+
+// High-level base settings.
+$brand-color:                   #AAFF9A; // light green
+$brand-color-dark:              #231F20;
+$brand-color-dark-secondary:    #333333;
+$brand-color-light:             #EEEEEE;
+
+
+$color-brand:        $brand-color;
+$color-gray:         $brand-color-dark;
+$color-white:        #FFFFFF;
+
+
+
+
+// Page
+$base-background-color:   $color-white;
+$base-text-color:         $color-gray;
+
+
+
+
+// Links
+$color-links:           $base-text-color;
+$color-links-brand:     $brand-color;
+
+
+
+
+// Text
+$color-text:            $base-text-color;
+$color-custom-red:          #CD5C5C; //indianred
+
+
+
+
+// Page head
+$color-masthead:                $color-white;
+$color-page-head:               $color-white;
+$color-page-head-background:    $color-white;
+
+
+
+
+// Site nav
+$color-site-nav:    $base-text-color;
+
+
+
+
+// Page foot
+$color-page-foot:               $base-text-color;
+$color-page-foot-background:    darken($brand-color-light, 5%);
+
+
+
+
+
+// Headings
+$color-headings:    $base-text-color;
+$color-heading-sub: $base-text-color;

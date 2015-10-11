@@ -1,0 +1,27 @@
+/*------------------------------------*\
+    #LIST-BARE
+\*------------------------------------*/
+
+// Preconfigure these settings before the @import of this file.
+$list-bare-ns: null !default;
+
+/**
+ * Remove bullets and indents from lists.
+ */
+.#{$list-bare-ns}o-list-bare {
+    margin:  0;
+    padding: 0;
+    list-style: none;
+}
+
+.o-list li {
+  padding-bottom: 12px;
+}
+
+.o-list li:last-child {
+  padding-bottom: 0;
+}
+
+.o-list-horizon li {
+    display: inline-block;
+}
