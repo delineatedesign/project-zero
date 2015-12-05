@@ -61,10 +61,51 @@
   <a class="skip-main" href="#content">Skip to main content</a>
 
   <!-- 1. include html-components header.html -->
+  <header class="header  c-page-head">
+    <div class="o-wrapper">
+      <!-- a. Zeroculture logo -->
+      <img src="http://placehold.it/400x50" class="site-logo" alt="Zero Logo">
+
+      <!-- Navigation toggle icon -->
+      <a href="#" class="toggle-panel">
+        <span class="burger-x">Menu</span>
+      </a>
+
+      <!-- Social links -->
+      <div class="c-page-head__social">
+        <div class="c-page-head__social--item">
+          <a href="" title="Twitter"><i class="fa fa-twitter"></i></a>
+        </div>
+        <div class="c-page-head__social--item">
+          <a href="" title="Facebook"><i class="fa fa-facebook"></i></a>
+        </div>
+      </div>
+    </div>
+  </header>
 
   <section id="wrapper-scotchpanel" class="o-wrapper  fade-in">
 
     <!-- 2. include html-components "scotchPanel-nav.html" -->
+    <div id="zero-scotch-panel" class="fade-in fade-second">
+      <nav id="main-nav">
+        <div id="scotch-panel">
+
+          <ul class="o-list-bare">
+            <li><a href="" class="toggle-nested-scotch-panel">Sub menu link toggle</a>
+              <ul id="nested-scotch-panel" class="o-list-bare">
+                <li><a href="index.html"></i>Home</a></li>
+              </ul>
+            </li>
+            <li><a href="page.html">Page</a></li>
+            <li><a href="single.html">Single Article</a></li>
+            <li><a href="archive.html">Archive</a></li>
+            <li><a href="" target="_blank"><i class="fa fa-twitter"></i>Twitter</a></li>
+            <li><a href="" target="_blank"><i class="fa fa-facebook"></i>Facebook</a></li>
+          </ul>
+
+        </div>
+      </nav>
+    </div> <!-- /#zero-scotch-panel-->
 
     <article class="article">
       <!--
@@ -276,6 +317,19 @@
   </section>
 
   <!-- 3. include html-components "footer.html" -->
+  <footer class="footer  c-page-foot">
+    <div class="o-wrapper">
+      <span class="c-page-foot-copyright">&copy; 2015 ZERO</span>
+      <ul class="o-list-bare  o-list-horizon">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="page.html">PAGE</a></li>
+        <li><a href="single.html">SINGLE ARTICLE</a></li>
+        <li><a href="archive.html">ARCHIVE</a></li>
+      </ul>
+    </div>
+  </footer>
+
+
   <!-- 4. include html-components "scripts.html" -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
