@@ -697,56 +697,18 @@ a.toggle-nested-scotch-panel:before {
   .img-bkg-lg { height: 720px; }
 }
 
-/*------------------------------------*    #IMAGES
+/*------------------------------------*
+#IMAGES
 \*------------------------------------*/
 /**
  * Classes to control images display
  */
-/**
- * Font awesome icons.
- */
-.article .fa,
-.content-meta .fa,
-.heading-lead .fa {
-  padding-right: 0.25em; }
 
 /**
  * bootstrap.css class addition.
  */
 .img-responsive {
   margin-bottom: 24px; }
-
-/**
- * Classes to control the height of elements with a background image.
- *
- * -sm is used for article list items.
- * -md is used for single article feature image with the article title.
- * -lg is used for the front page faux 100% fullscreen.
- */
-.img-bkg-sm,
-.img-bkg-md,
-.img-bkg-lg {
-  position: relative;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover; }
-
-.img-bkg-lg {
-  height: 480px; }
-
-.img-bkg-md {
-  height: 360px; }
-
-.img-bkg-sm {
-  height: 240px; }
-
-@media (min-width: 960px) {
-  .w2 .img-bkg-sm {
-    height: 480px; }
-  .img-bkg-lg {
-    height: 720px; }
-  .img-bkg-md {
-    height: 480px; } }
 
 /*------------------------------------*    #DISPLAY
 \*------------------------------------*/
@@ -838,3 +800,11 @@ a.toggle-nested-scotch-panel:before {
 .fade-in.fade-third {
   -webkit-animation-delay: 2.8s;
   animation-delay: 2.8s; }
+
+  /**
+   * Font awesome icons.
+   */
+  .article-list__item .fa,
+  .content-meta .fa,
+  .heading-lead .fa {
+    padding-right: 0.25em !important; }
