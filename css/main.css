@@ -135,7 +135,7 @@ h6, .h6 {
  * Generally used for front page feature and single article titles.
  */
 .heading-lead {
-  font-size: 36px;
+  font-size: 32px;
   font-family: share-techmono, sans-serif;
   line-height: 1.25; }
 
@@ -643,13 +643,16 @@ a.toggle-nested-scotch-panel:before {
   background: #CCC;
 }
 
+.article-list__item.w1-1 { width:  100%; }
+
 .img-bkg-sm,
 .img-bkg-md,
 .img-bkg-lg {
   position: relative;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover; }
+  background-size: cover;
+}
 
 [class*="img-bkg"] {
   height: 240px;
@@ -660,6 +663,7 @@ a.toggle-nested-scotch-panel:before {
   .article-list__item.w1-2 { width:  50%; }
   .article-list__item.w3-4 { width:  75%; }
   .article-list__item.w1-1 { width:  100%; }
+   }
 
   .img-bkg-md { height: 480px; }
   .img-bkg-lg { height: 720px; }
