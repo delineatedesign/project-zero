@@ -38,6 +38,10 @@ ins {
 
 /*------------------------------------*    #SHARED
 \*------------------------------------*/
+
+/* force vertical scrollbar */
+html { overflow-y: scroll; }
+
 body {
   font-size: 18px;
   font-family: "fira-sans", helvetica, sans-serif;
@@ -127,7 +131,7 @@ h6, .h6 {
 
 /**
  * Make a title stand out! .heading-lead!
- * 
+ *
  * Generally used for front page feature and single article titles.
  */
 .heading-lead {
@@ -201,7 +205,7 @@ blockquote:before {
   /* Styled to match the default WordPress screen reader text */
   background-color: #f1f1f1;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-  color: #21759b;
+  color: #231F20;
   display: block;
   font-family: "Open Sans",sans-serif;
   font-size: 14px;
@@ -215,9 +219,10 @@ blockquote:before {
   transition: top 0.75s ease-out; }
 
 .skip-main:focus {
-  color: #21759b;
   top: 7px;
-  transition: top 0s; }
+  transition: top 0s;
+  z-index: 1;
+}
 
 /*------------------------------------*    #WRAPPERS
 \*------------------------------------*/
@@ -247,7 +252,7 @@ blockquote:before {
 
 /**
  * On large screens article and page content sits in the center of the screen.
- * 
+ *
  * If this value is changed, please change the maths for .o-box__enhance!
  */
 @media screen and (min-width: 960px) {
@@ -269,7 +274,7 @@ blockquote:before {
   width: 100%; }
 
 /**
- * The .o-box-absolute__top-left and .o-box-absolute__top-right classes are 
+ * The .o-box-absolute__top-left and .o-box-absolute__top-right classes are
  * used with .o-wrapper-content__center wrapper.
  *
  * On larger screens we can pull out elements
@@ -582,103 +587,87 @@ a.toggle-nested-scotch-panel:before {
   background: #231F20;
   background: rgba(255, 255, 255, 0.8); }
 
-/*------------------------------------*    #ARTCILE LIST
+/*------------------------------------*
+  #ARTCILE LIST
 \*------------------------------------*/
 /**
  * Display articles in a grid layout
  *
  * These are the classes applied to the articles wrapper.
- * Usually applied to a <ul> element
+ *
  */
 .article-list {
   background-color: #FFFFFF;
   overflow: hidden;
-  margin: 0;
-  padding: 0;
-  transition: all 1s ease-in-out; }
+}
 
-.packery .article-list {
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: alpha(opacity=0);
-  -moz-opacity: 0;
-  -khtml-opacity: 0;
-  opacity: 0; }
+.packery {
+  -webkit-animation: KEYFRAME-NAME 5s ;
+  -moz-animation:    KEYFRAME-NAME 5s ;
+  -o-animation:      KEYFRAME-NAME 5s ;
+  animation:         KEYFRAME-NAME 5s ;
+}
 
-.packery .article-list.show,
-.no-js .packery .article-list,
-.no-js .packery .article-list.show {
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-  filter: alpha(opacity=100);
-  -moz-opacity: 1;
-  -khtml-opacity: 1;
-  opacity: 1; }
+  @-webkit-keyframes KEYFRAME-NAME {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @-moz-keyframes KEYFRAME-NAME {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @-o-keyframes KEYFRAME-NAME {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @keyframes KEYFRAME-NAME {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
 
-/*------------------------------------------------*# ARTCILE LIST ITEM
-  .w2 class used to make list items twice the size
+/* clearfix */
+.packery:after {
+  content: ' ';
+  display: block;
+  clear: both;
+}
+
+/*------------------------------------------------*
+  # ARTCILE LIST ITEM
 \*------------------------------------------------*/
-/**
- * The list item that contains an article
- *
- * Usually applied to the article list <li> elements.
- * .w class makes a list item twice the size.
- */
+
 .article-list__item {
-  width: 100%;
   position: relative;
-  overflow: hidden;
-  display: inline-block;
-  vertical-align: top; }
+  width: 50%;
+  float: left;
+  background: #CCC;
+}
 
-@media (min-width: 540px) {
-  .article-list__item {
-    width: 50%; } }
+.img-bkg-sm,
+.img-bkg-md,
+.img-bkg-lg {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; }
 
-@media (min-width: 960px) {
-  .article-list__item {
-    width: 25%; }
-  .article-list__item.w2 {
-    width: 50%; } }
+[class*="img-bkg"] {
+  height: 240px;
+}
 
-.article-list__item h2 {
-  font-size: 24px;
-  text-transform: uppercase;
-  font-style: italic;
-  color: #FFFFFF;
-  font-weight: 600; }
+@media screen and (min-width: 600px) {
+  .article-list__item { width: 25%; }
+  .article-list__item.w1-2 { width:  50%; }
+  .article-list__item.w3-4 { width:  75%; }
+  .article-list__item.w1-1 { width:  100%; }
 
-.article-list__item:hover h2 {
-  color: inherit; }
+  .img-bkg-md { height: 480px; }
+  .img-bkg-lg { height: 720px; }
+}
 
-.article-list__item a,
-.article-list__item a:visited {
-  color: #FFFFFF; }
 
-.article-list__item:hover a,
-.article-list__item:active a,
-.article-list__item:focus a {
-  color: #231F20; }
-
-@media screen and (min-width: 960px) {
-  .w2 h2 {
-    font-size: 32px; }
-  .w2 a {
-    font-size: 24px; } }
-
-/*------------------------------------*      #PACKERY COMPONENT
-\*------------------------------------*/
-/**
- * The article list wrapper to enable packery layout.
- */
-.packery-layout {
-  text-align: center; }
-
-/**
- * We don't want any space between packery list items.
- */
-.gutter-sizer {
-  width: 0%; }
-
-/*------------------------------------*    #CONTENT WRAPPERS
+/*------------------------------------*
+  #CONTENT WRAPPERS
 \*------------------------------------*/
 /**
  * General wrapper for any page with content.
@@ -688,8 +677,8 @@ a.toggle-nested-scotch-panel:before {
 
 /**
  * .content-meta can be used to wrap additional content,
- * like an article time and date or author name. 
- * 
+ * like an article time and date or author name.
+ *
  * Used by elements with a .heading-lead page title and meta data.
  */
 .content-meta {
