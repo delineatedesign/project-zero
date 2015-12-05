@@ -226,6 +226,33 @@ blockquote:before {
 
 /*------------------------------------*    #WRAPPERS
 \*------------------------------------*/
+
+/*------------------------------------*
+  #CONTENT WRAPPERS
+\*------------------------------------*/
+/**
+ * General wrapper for any page with content.
+ */
+
+.page__content {
+  position: relative;
+}
+
+/**
+ * .content-meta can be used to wrap additional content,
+ * like an article time and date or author name.
+ *
+ * Used by elements with a .heading-lead page title and meta data.
+ */
+.content-meta {
+  padding: 12px; }
+
+@media (min-width: 540px) {
+  .content-meta {
+    padding: 0;
+    font-size: 1.25em; } }
+
+
 /**
  * The main wrapper for the site. This constrains the maximum width.
  */
@@ -669,29 +696,6 @@ a.toggle-nested-scotch-panel:before {
   .img-bkg-md { height: 480px; }
   .img-bkg-lg { height: 720px; }
 }
-
-/*------------------------------------*
-  #CONTENT WRAPPERS
-\*------------------------------------*/
-/**
- * General wrapper for any page with content.
- */
-.page__content {
-  position: relative; }
-
-/**
- * .content-meta can be used to wrap additional content,
- * like an article time and date or author name.
- *
- * Used by elements with a .heading-lead page title and meta data.
- */
-.content-meta {
-  padding: 12px; }
-
-@media (min-width: 540px) {
-  .content-meta {
-    padding: 0;
-    font-size: 1.25em; } }
 
 /*------------------------------------*    #IMAGES
 \*------------------------------------*/

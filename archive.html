@@ -10,25 +10,25 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Zeroculture Title</title>
   <meta name="description" content="" />
-  
+
   <meta name="apple-mobile-web-app-title" content="0">
-  
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/main.min.css">
-  
+  <link rel="stylesheet" href="css/main.css">
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
-  
+
   <link rel="shortcut icon" href="img/favicon.ico">
   <link rel="icon" type="image/png" href="favicon.png" />
-  
+
   <script src="js/vendor/modernizr.js"></script>
   <script src="js/vendor/picturefill.js" async></script>
-    
+
   <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
-  
+
   <!--[if lt IE 8]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
@@ -37,7 +37,7 @@
    <link rel="icon" type="image/png" href="img/favicons/favicon-16x16.png" sizes="16x16">
    <link rel="icon" type="image/png" href="img/favicons/favicon-32x32.png" sizes="32x32">
    <link rel="icon" type="image/png" href="img/favicons/favicon-96x96.png" sizes="96x96">
-   
+
    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
@@ -46,50 +46,315 @@
    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
-   
+
    <link rel="manifest" href="img/favicons/manifest.json">
    <meta name="msapplication-TileColor" content="#ffffff">
    <meta name="msapplication-TileImage" content="img/favicons/mstile-144x144.png">
-   <meta name="theme-color" content="#ffffff"> 
-    
+   <meta name="theme-color" content="#ffffff">
+
   <script src="//use.typekit.net/vpx1ngk.js"></script>
   <script>try{Typekit.load();}catch(e){}</script>
-   
+
 </head>
 
 <body class="packery">
   <a class="skip-main" href="#content">Skip to main content</a>
-  
+
   <!-- 1. include html-components "header.html" -->
-  
+  <header class="header  c-page-head">
+    <div class="o-wrapper">
+      <!-- a. Zeroculture logo -->
+      <img src="http://placehold.it/400x50" class="site-logo" alt="Zero Logo">
+
+      <!-- Navigation toggle icon -->
+      <a href="#" class="toggle-panel">
+        <span class="burger-x">Menu</span>
+      </a>
+
+      <!-- Social links -->
+      <div class="c-page-head__social">
+        <div class="c-page-head__social--item">
+          <a href="" title="Twitter"><i class="fa fa-twitter"></i></a>
+        </div>
+        <div class="c-page-head__social--item">
+          <a href="" title="Facebook"><i class="fa fa-facebook"></i></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
   <section id="wrapper-scotchpanel" class="o-wrapper  fade-in">
-    
+
     <!-- 2. include html-components "scotchPanel-nav.html" -->
-    
+    <div id="zero-scotch-panel" class="fade-in fade-second">
+      <nav id="main-nav">
+        <div id="scotch-panel">
+
+          <ul class="o-list-bare">
+            <li><a href="" class="toggle-nested-scotch-panel">Sub menu link toggle</a>
+              <ul id="nested-scotch-panel" class="o-list-bare">
+                <li><a href="index.html"></i>Home</a></li>
+              </ul>
+            </li>
+            <li><a href="page.html">Page</a></li>
+            <li><a href="single.html">Single Article</a></li>
+            <li><a href="archive.html">Archive</a></li>
+            <li><a href="" target="_blank"><i class="fa fa-twitter"></i>Twitter</a></li>
+            <li><a href="" target="_blank"><i class="fa fa-facebook"></i>Facebook</a></li>
+          </ul>
+
+        </div>
+      </nav>
+    </div> <!-- /#zero-scotch-panel-->
+
     <!--
-      * 
+      *
       * PAGE TITLE + BACKGROUND IMAGE
       * include html-components "title-bkg-img_md.html"
       *
       -->
-        
+      <div class="o-box  img-bkg-md  fade-in" style="background-image: url('http://placehold.it/900x675/CCCCCC');">
+        <div class="o-box__absolute-wide  text-center  color-light__bkg-opaque  u-padding-base">
+          <h1 class="heading-lead  u-margin-0">Archive/Category Title</h1>
+        </div>
+      </div>
+
+
     <div id="content" class="page__content" role="main">
-        
-      <div class="packery-layout">
-        <div class="ajax-loader"><img src="img/ajax.gif" /></div>
-        <!--
-          *   
-          * ARTICLE LIST
-          * include html-components "article-list.html"
-          *
-          -->
-      </div> <!-- /.packery-layout -->
-      
+
+
+                  <!--
+                  *
+                  * ARTICLE LIST
+                  * include html-components "article-list.html"
+                  *
+                  -->
+           <!-- /.packery-layout -->
+           <div class="article-list  packery  js-packery">
+
+         <div class="article-list__item  w1-2">
+           <article class="article  img-bkg-md" style="background-image: url('http://placehold.it/600x450/CCCCCC');">
+             <div class="article__content-absolute  text-center">
+               <div class="o-pack">
+                 <div class="o-pack__item  u-valign-middle  u-padding-base">
+                   <h2 class="u-margin-0">Article Title</h2>
+                   <a href="single.html"><i class="fa  fa-book"></i>Read More</a>
+                 </div> <!-- /.o-pack__item -->
+               </div> <!-- /.o-pack -->
+             </div>
+           </article>
+         </div>
+
+         <div class="article-list__item">
+           <article class="article  img-bkg-md" style="background-image: url('http://placehold.it/600x450/CCCCCC');">
+             <div class="article__content-absolute  text-center">
+               <div class="o-pack">
+                 <div class="o-pack__item  u-valign-middle  u-padding-base">
+                   <h2 class="u-margin-0">Article Title</h2>
+                   <a href="single.html"><i class="fa  fa-book"></i>Read More</a>
+                 </div> <!-- /.o-pack__item -->
+               </div> <!-- /.o-pack -->
+             </div>
+           </article>
+         </div>
+
+         <div class="article-list__item">
+           <article class="article  img-bkg-sm" style="background-image: url('http://placehold.it/600x450/CCCCCC');">
+             <div class="article__content-absolute  text-center">
+               <div class="o-pack">
+                 <div class="o-pack__item  u-valign-middle  u-padding-base">
+                   <h2 class="u-margin-0">Article Title</h2>
+                   <a href="single.html"><i class="fa  fa-book"></i>Read More</a>
+                 </div> <!-- /.o-pack__item -->
+               </div> <!-- /.o-pack -->
+             </div>
+           </article>
+         </div>
+
+         <div class="article-list__item">
+           <article class="article  img-bkg-sm" style="background-image: url('http://placehold.it/600x450/CCCCCC');">
+             <div class="article__content-absolute  text-center">
+               <div class="o-pack">
+                 <div class="o-pack__item  u-valign-middle  u-padding-base">
+                   <h2 class="u-margin-0">Article Title</h2>
+                   <a href="single.html"><i class="fa  fa-book"></i>Read More</a>
+                 </div> <!-- /.o-pack__item -->
+               </div> <!-- /.o-pack -->
+             </div>
+           </article>
+         </div>
+
+         <div class="article-list__item">
+           <article class="article  img-bkg-sm" style="background-image: url('http://placehold.it/600x450/CCCCCC');">
+             <div class="article__content-absolute  text-center">
+               <div class="o-pack">
+                 <div class="o-pack__item  u-valign-middle  u-padding-base">
+                   <h2 class="u-margin-0">Article Title</h2>
+                   <a href="single.html"><i class="fa  fa-book"></i>Read More</a>
+                 </div> <!-- /.o-pack__item -->
+               </div> <!-- /.o-pack -->
+             </div>
+           </article>
+         </div>
+
+         <div class="article-list__item">
+           <article class="article  img-bkg-sm" style="background-image: url('http://placehold.it/600x450/CCCCCC');">
+             <div class="article__content-absolute  text-center">
+               <div class="o-pack">
+                 <div class="o-pack__item  u-valign-middle  u-padding-base">
+                   <h2 class="u-margin-0">Article Title</h2>
+                   <a href="single.html"><i class="fa  fa-book"></i>Read More</a>
+                 </div> <!-- /.o-pack__item -->
+               </div> <!-- /.o-pack -->
+             </div>
+           </article>
+         </div>
+
+         <div class="article-list__item  w1-1">
+           <article class="article  img-bkg-md" style="background-image: url('http://placehold.it/600x450/CCCCCC');">
+             <div class="article__content-absolute  text-center">
+               <div class="o-pack">
+                 <div class="o-pack__item  u-valign-middle  u-padding-base">
+                   <h2 class="u-margin-0">Article Title</h2>
+                   <a href="single.html"><i class="fa  fa-book"></i>Read More</a>
+                 </div> <!-- /.o-pack__item -->
+               </div> <!-- /.o-pack -->
+             </div>
+           </article>
+         </div>
+
+         <div class="article-list__item">
+           <article class="article  img-bkg-sm" style="background-image: url('http://placehold.it/600x450/CCCCCC');">
+             <div class="article__content-absolute  text-center">
+               <div class="o-pack">
+                 <div class="o-pack__item  u-valign-middle  u-padding-base">
+                   <h2 class="u-margin-0">Article Title</h2>
+                   <a href="single.html"><i class="fa  fa-book"></i>Read More</a>
+                 </div> <!-- /.o-pack__item -->
+               </div> <!-- /.o-pack -->
+             </div>
+           </article>
+         </div>
+
+         <div class="article-list__item">
+           <article class="article  img-bkg-sm" style="background-image: url('http://placehold.it/600x450/CCCCCC');">
+             <div class="article__content-absolute  text-center">
+               <div class="o-pack">
+                 <div class="o-pack__item  u-valign-middle  u-padding-base">
+                   <h2 class="u-margin-0">Article Title</h2>
+                   <a href="single.html"><i class="fa  fa-book"></i>Read More</a>
+                 </div> <!-- /.o-pack__item -->
+               </div> <!-- /.o-pack -->
+             </div>
+           </article>
+         </div>
+
+         <div class="article-list__item">
+           <article class="article  img-bkg-sm" style="background-image: url('http://placehold.it/600x450/CCCCCC');">
+             <div class="article__content-absolute  text-center">
+               <div class="o-pack">
+                 <div class="o-pack__item  u-valign-middle  u-padding-base">
+                   <h2 class="u-margin-0">Article Title</h2>
+                   <a href="single.html"><i class="fa  fa-book"></i>Read More</a>
+                 </div> <!-- /.o-pack__item -->
+               </div> <!-- /.o-pack -->
+             </div>
+           </article>
+         </div>
+
+         <div class="article-list__item  w3-4">
+           <article class="article  img-bkg-sm" style="background-image: url('http://placehold.it/600x450/CCCCCC');">
+             <div class="article__content-absolute  text-center">
+               <div class="o-pack">
+                 <div class="o-pack__item  u-valign-middle  u-padding-base">
+                   <h2 class="u-margin-0">Article Title</h2>
+                   <a href="single.html"><i class="fa  fa-book"></i>Read More</a>
+                 </div> <!-- /.o-pack__item -->
+               </div> <!-- /.o-pack -->
+             </div>
+           </article>
+         </div>
+
+
+         <div class="article-list__item">
+           <article class="article  img-bkg-sm" style="background-image: url('http://placehold.it/600x450/CCCCCC');">
+             <div class="article__content-absolute  text-center">
+               <div class="o-pack">
+                 <div class="o-pack__item  u-valign-middle  u-padding-base">
+                   <h2 class="u-margin-0">Article Title</h2>
+                   <a href="single.html"><i class="fa  fa-book"></i>Read More</a>
+                 </div> <!-- /.o-pack__item -->
+               </div> <!-- /.o-pack -->
+             </div>
+           </article>
+         </div>
+
+
+         <div class="article-list__item">
+           <article class="article  img-bkg-sm" style="background-image: url('http://placehold.it/600x450/CCCCCC');">
+             <div class="article__content-absolute  text-center">
+               <div class="o-pack">
+                 <div class="o-pack__item  u-valign-middle  u-padding-base">
+                   <h2 class="u-margin-0">Article Title</h2>
+                   <a href="single.html"><i class="fa  fa-book"></i>Read More</a>
+                 </div> <!-- /.o-pack__item -->
+               </div> <!-- /.o-pack -->
+             </div>
+           </article>
+         </div>
+
+         <div class="article-list__item w1-2">
+           <article class="article  img-bkg-sm" style="background-image: url('http://placehold.it/600x450/CCCCCC');">
+             <div class="article__content-absolute  text-center">
+               <div class="o-pack">
+                 <div class="o-pack__item  u-valign-middle  u-padding-base">
+                   <h2 class="u-margin-0">Article Title</h2>
+                   <a href="single.html"><i class="fa  fa-book"></i>Read More</a>
+                 </div> <!-- /.o-pack__item -->
+               </div> <!-- /.o-pack -->
+             </div>
+           </article>
+         </div>
+
+       </div> <!-- /.article-list-->
+
+
     </div> <!-- /#content-->
   </section>
-  
+
   <!-- 3. include html-components "footer.html" -->
+  <footer class="footer  c-page-foot">
+    <div class="o-wrapper">
+      <span class="c-page-foot-copyright">&copy; 2015 ZERO</span>
+      <ul class="o-list-bare  o-list-horizon">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="page.html">PAGE</a></li>
+        <li><a href="single.html">SINGLE ARTICLE</a></li>
+        <li><a href="archive.html">ARCHIVE</a></li>
+      </ul>
+    </div>
+  </footer>
+
   <!-- 4. include html-components "scripts.html" -->
-    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+  <script src="js/vendor/scotchPanel.js"></script>
+  <script src="js/scotchPanel-zeroculture.js"></script>
+
+  <script src="js/packery-zeroculture.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-X to Zeroculture's ID -->
+  <script>
+  (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='https://www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+  </script>
 </body>
 </html>
