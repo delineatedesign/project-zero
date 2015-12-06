@@ -36,12 +36,9 @@ ins {
 ins {
   border-bottom: 1px solid; }
 
-/*------------------------------------*    #SHARED
+/*------------------------------------*
+  #SHARED
 \*------------------------------------*/
-
-/* force vertical scrollbar */
-html { overflow-y: scroll; }
-
 body {
   font-size: 18px;
   font-family: "fira-sans", helvetica, sans-serif;
@@ -69,7 +66,8 @@ pre {
 ul, ol, dd {
   margin-left: 48px; }
 
-/*------------------------------------*    #TYPOGRAPHY
+/*------------------------------------*
+  #TYPOGRAPHY
 \*------------------------------------*/
 p {
   line-height: 30px;
@@ -78,7 +76,8 @@ p {
 .small {
   line-height: 30px; }
 
-/*------------------------------------*    #HEADINGS
+/*------------------------------------*
+  #HEADINGS
 \*------------------------------------*/
 /**
  * Headings 1–6.
@@ -86,7 +85,8 @@ p {
 h1, h2, h3, h4, h5, h6 {
   color: #231F20; }
 
-/*------------------------------------*    #LINKS
+/*------------------------------------*
+  #LINKS
 \*------------------------------------*/
 a {
   text-decoration: none;
@@ -103,7 +103,8 @@ a:visited {
   color: #231F20;
   cursor: pointer; }
 
-/*------------------------------------*    #HEADINGS
+/*------------------------------------*
+  #HEADINGS
 \*------------------------------------*/
 h1, .h1 {
   font-size: 36px;
@@ -135,7 +136,7 @@ h6, .h6 {
  * Generally used for front page feature and single article titles.
  */
 .heading-lead {
-  font-size: 32px;
+  font-size: 36px;
   font-family: share-techmono, sans-serif;
   line-height: 1.25; }
 
@@ -150,7 +151,8 @@ h2 {
   font-style: italic;
   font-weight: 300; }
 
-/*------------------------------------*    #ELEMENTS TYPE
+/*------------------------------------*
+  #ELEMENTS TYPE
 \*------------------------------------*/
 blockquote {
   position: relative;
@@ -186,7 +188,8 @@ blockquote:before {
 .quote-color-custom blockquote:before {
   background-color: #EEEEEE; }
 
-/*------------------------------------*    #CUSTOM LINKS
+/*------------------------------------*
+  #CUSTOM LINKS
 \*------------------------------------*/
 /**
  * Content text is a thin font weight.
@@ -205,9 +208,8 @@ blockquote:before {
   /* Styled to match the default WordPress screen reader text */
   background-color: #f1f1f1;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-  color: #231F20;
+  color: #21759b;
   display: block;
-  font-family: "Open Sans",sans-serif;
   font-size: 14px;
   font-weight: 700;
   height: auto;
@@ -216,43 +218,17 @@ blockquote:before {
   padding: 15px 23px 14px;
   text-decoration: none;
   width: auto;
-  transition: top 0.75s ease-out; }
+}
 
 .skip-main:focus {
+  color: #21759b;
   top: 7px;
-  transition: top 0s;
   z-index: 1;
 }
 
-/*------------------------------------*    #WRAPPERS
-\*------------------------------------*/
-
 /*------------------------------------*
-  #CONTENT WRAPPERS
+  #WRAPPERS
 \*------------------------------------*/
-/**
- * General wrapper for any page with content.
- */
-
-.page__content {
-  position: relative;
-}
-
-/**
- * .content-meta can be used to wrap additional content,
- * like an article time and date or author name.
- *
- * Used by elements with a .heading-lead page title and meta data.
- */
-.content-meta {
-  padding: 12px; }
-
-@media (min-width: 540px) {
-  .content-meta {
-    padding: 0;
-    font-size: 1.25em; } }
-
-
 /**
  * The main wrapper for the site. This constrains the maximum width.
  */
@@ -286,9 +262,11 @@ blockquote:before {
   .o-wrapper-content__center {
     padding: 48px 0;
     width: 50%;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+  }
 
-/*------------------------------------*    #BOXES
+/*------------------------------------*
+  #BOXES
 \*------------------------------------*/
 .o-box {
   position: relative; }
@@ -306,7 +284,7 @@ blockquote:before {
  *
  * On larger screens we can pull out elements
  * to sit to the left or right of the content.
- * For example, add to a blockquote to float the quote to the top side of the content.
+ * For example, add to a blockquote to position the quote to the top and side of the content.
  *
  * The maths here depends on .o-wrapper-content__center being 50% wide.
  */
@@ -346,7 +324,8 @@ blockquote:before {
     float: left;
     padding: 0 24px; } }
 
-/*------------------------------------*    #PACK
+/*------------------------------------*
+  #PACK
 \*------------------------------------*/
 /**
  * The Pack object simply forces an arbitrary number of elements to pack up
@@ -394,7 +373,8 @@ blockquote:before {
 .o-pack--equal {
   table-layout: fixed; }
 
-/*------------------------------------*    #LIST-BARE
+/*------------------------------------*
+  #LIST-BARE
 \*------------------------------------*/
 /**
  * Remove bullets and indents from lists.
@@ -413,7 +393,8 @@ blockquote:before {
 .o-list-horizon li {
   display: inline-block; }
 
-/*------------------------------------*      #HEADER
+/*------------------------------------*
+  #HEADER
 \*------------------------------------*/
 .c-page-head {
   position: relative;
@@ -430,7 +411,8 @@ blockquote:before {
   width: 200px;
   height: 25px; }
 
-/*------------------------------------*      #HEADER SOCIAL LINKS
+/*------------------------------------*
+  #HEADER SOCIAL LINKS
 \*------------------------------------*/
 .c-page-head__social {
   display: none; }
@@ -439,7 +421,8 @@ blockquote:before {
   .c-page-head__social {
     display: table;
     float: right;
-    height: 60px; } }
+    height: 60px; }
+  }
 
 .c-page-head__social--item {
   display: table-cell;
@@ -458,30 +441,37 @@ blockquote:before {
 .c-page-head__social--item a:focus {
   color: #AAFF9A; }
 
-/*------------------------------------*      #FOOTER
+/*------------------------------------*
+  #FOOTER
 \*------------------------------------*/
 .c-page-foot {
   font-size: .75em;
   padding: 24px 48px;
-  background-color: #e1e1e1; }
+  background-color: #e1e1e1;
+}
 
 .footer ul {
-  display: inline-block; }
+  display: inline-block;
+}
 
 footer a,
 footer a:visited {
   color: #231F20;
   padding: 0 6px 0 4px;
   border-right: 2px solid #AAFF9A;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+}
 
 footer li:last-child a {
-  border: 0; }
+  border: 0;
+}
 
 .c-page-foot-copyright {
-  font-weight: bold; }
+  font-weight: bold;
+}
 
-/*------------------------------------*      # NAVIGATION COMPONENT
+/*------------------------------------*
+  # NAVIGATION COMPONENT
 \*------------------------------------*/
 /**
  * .toggle-panel is the navigation hamburger icon link
@@ -492,7 +482,8 @@ a.toggle-panel {
   vertical-align: middle;
   width: 40px;
   height: 60px;
-  margin-left: 24px; }
+  margin-left: 24px;
+}
 
 /**
  * Make and animate the hamburger icon.
@@ -514,7 +505,8 @@ a.toggle-panel {
   user-select: none;
   transition: all 225ms ease;
   margin: 0 auto;
-  text-indent: -9999px; }
+  text-indent: -9999px;
+}
 
 .burger-x:before, .burger-x:after {
   position: absolute;
@@ -523,30 +515,37 @@ a.toggle-panel {
   height: 100%;
   background: #231F20;
   content: '';
-  transition: all 225ms ease; }
+  transition: all 225ms ease;
+}
 
 .burger-x:before {
   -webkit-transform: translateY(-200%);
-  transform: translateY(-200%); }
+  transform: translateY(-200%);
+}
 
 .burger-x:after {
   -webkit-transform: translateY(200%);
-  transform: translateY(200%); }
+  transform: translateY(200%);
+}
 
 .scotch-is-showing .burger-x {
-  background-color: transparent !important; }
+  background-color: transparent !important;
+}
 
 .scotch-is-showing .burger-x:before {
   -webkit-transform: translateY(0) rotate(45deg);
   transform: translateY(0) rotate(45deg);
-  background-color: #AAFF9A; }
+  background-color: #AAFF9A;
+}
 
 .scotch-is-showing .burger-x:after {
   -webkit-transform: translateY(0) rotate(-45deg);
   transform: translateY(0) rotate(-45deg);
-  background-color: #AAFF9A; }
+  background-color: #AAFF9A;
+}
 
-/*------------------------------------*      # FLY OUT NAVIGATION
+/*------------------------------------*
+  # FLY OUT NAVIGATION
 \*------------------------------------*/
 /**
  * .toggle-panel is the menu hamburger icon link
@@ -609,6 +608,8 @@ a.toggle-nested-scotch-panel:before {
   position: absolute;
   top: 0;
   left: 0;
+  -webkit-transition: .2s all ease;
+  transition: .2s all ease;
 }
 
 .article__content-absolute:hover {
@@ -623,92 +624,200 @@ a.toggle-nested-scotch-panel:before {
  * Display articles in a grid layout
  *
  * These are the classes applied to the articles wrapper.
- *
+ * Usually applied to a <ul> element
  */
-.article-list,
-.packery {
+.article-list {
   background-color: #FFFFFF;
   overflow: hidden;
-  -webkit-animation: opacity-reveal 5s ;
-  -moz-animation:    opacity-reveal 5s ;
-  -o-animation:      opacity-reveal 5s ;
-  animation:         opacity-reveal 5s ;
-}
+  margin: 0;
+  padding: 0;
+  transition: all 1s ease-in-out; }
 
-/* clearfix */
-.article-list:after,
-.packery:after {
-  content: ' ';
-  display: block;
-  clear: both;
-}
+.packery .article-list {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  opacity: 0; }
 
-  @-webkit-keyframes opacity-reveal {
-    0%   { opacity: 0; }
-    100% { opacity: 1; }
-  }
-  @-moz-keyframes opacity-reveal {
-    0%   { opacity: 0; }
-    100% { opacity: 1; }
-  }
-  @-o-keyframes opacity-reveal {
-    0%   { opacity: 0; }
-    100% { opacity: 1; }
-  }
-  @keyframes opacity-reveal {
-    0%   { opacity: 0; }
-    100% { opacity: 1; }
-  }
+.packery .article-list.show,
+.no-js .packery .article-list,
+.no-js .packery .article-list.show {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  -moz-opacity: 1;
+  -khtml-opacity: 1;
+  opacity: 1; }
 
 /*------------------------------------------------*
   # ARTCILE LIST ITEM
+  .w2 class used to make list items twice the size
 \*------------------------------------------------*/
-
+/**
+ * The list item that contains an article
+ *
+ * Usually applied to the article list <li> elements.
+ * .w classes make list items larger in size.
+ */
 .article-list__item {
+  width: 100%;
   position: relative;
-  width: 50%;
-  float: left;
-  background: #CCC;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: top;
 }
 
-.article-list__item.w1-1 { width:  100%; }
-
-.img-bkg-sm,
-.img-bkg-md,
-.img-bkg-lg {
-  position: relative;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+@media (min-width: 540px) {
+  .article-list__item {
+    width: 50%;
+  }
+  .article-list__item.w1-1 {
+    width: 100%;
+  }
 }
 
-[class*="img-bkg-"] {
-  height: 240px;
+@media (min-width: 960px) {
+  .article-list__item {
+    width: 25%;
+  }
+  .article-list__item.w1-2 {
+    width: 50%;
+  }
+  .article-list__item.w3-4 {
+    width: 75%;
+  }
 }
 
-@media screen and (min-width: 600px) {
-  .article-list__item { width: 25%; }
-  .article-list__item.w1-2 { width:  50%; }
-  .article-list__item.w3-4 { width:  75%; }
-  .article-list__item.w1-1 { width:  100%; }
-   }
+.article-list__item h2 {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-style: italic;
+  color: #FFFFFF;
+  font-weight: 600;
+}
 
-  .img-bkg-md { height: 480px; }
-  .img-bkg-lg { height: 720px; }
+.article-list__item:hover h2 {
+  color: inherit;
+}
+
+.article-list__item a,
+.article-list__item a:visited {
+  color: #FFFFFF;
+}
+
+.article-list__item:hover a,
+.article-list__item:active a,
+.article-list__item:focus a {
+  color: #231F20;
+}
+
+@media screen and (min-width: 960px) {
+  .w1-1 h2,
+  .w1-2 h2,
+  .w3-4 h2 {
+    font-size: 32px;
+  }
+  .w1-1 a,
+  .w1-2 a,
+  .w3-4 a {
+    font-size: 24px; }
+  }
+
+/*------------------------------------*
+  #PACKERY COMPONENT
+\*------------------------------------*/
+/**
+ * The article list wrapper to enable packery layout.
+ */
+.packery-layout {
+  text-align: left;
+}
+
+/**
+ * We don't want any space between packery list items.
+ */
+.gutter-sizer {
+  width: 0%;
 }
 
 /*------------------------------------*
-#IMAGES
+  #CONTENT WRAPPERS
+\*------------------------------------*/
+/**
+ * General wrapper for any page with content.
+ */
+.page__content {
+  position: relative;
+}
+
+/**
+ * .content-meta can be used to wrap additional content,
+ * like an article time and date or author name.
+ *
+ * Used by elements with a .heading-lead page title and meta data.
+ */
+.content-meta {
+  padding: 12px;
+}
+
+@media (min-width: 540px) {
+  .content-meta {
+    padding: 0;
+    font-size: 1.25em;
+  }
+}
+
+/*------------------------------------*
+  #IMAGES
 \*------------------------------------*/
 /**
  * Classes to control images display
  */
+/**
+ * Font awesome icons.
+ */
+.article .fa,
+.content-meta .fa,
+.heading-lead .fa {
+  padding-right: 0.25em; }
 
 /**
  * bootstrap.css class addition.
  */
 .img-responsive {
   margin-bottom: 24px; }
+
+/**
+ * Classes to control the height of elements with a background image.
+ *
+ * -sm is used for article list items.
+ * -md is used for single article feature image with the article title.
+ * -lg is used for the front page faux 100% fullscreen.
+ */
+.img-bkg-sm,
+.img-bkg-md,
+.img-bkg-lg {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; }
+
+.img-bkg-lg {
+  height: 480px; }
+
+.img-bkg-md {
+  height: 360px; }
+
+.img-bkg-sm {
+  height: 240px; }
+
+@media (min-width: 960px) {
+  .w2 .img-bkg-sm {
+    height: 480px; }
+  .img-bkg-lg {
+    height: 720px; }
+  .img-bkg-md {
+    height: 480px; } }
 
 /*------------------------------------*    #DISPLAY
 \*------------------------------------*/
@@ -791,20 +900,15 @@ a.toggle-nested-scotch-panel:before {
 
 .fade-in.fade-first {
   -webkit-animation-delay: 0.7s;
-  animation-delay: 0.7s; }
+  animation-delay: 0.7s;
+}
 
 .fade-in.fade-second {
   -webkit-animation-delay: 1.2s;
-  animation-delay: 1.2s; }
+  animation-delay: 1.2s;
+}
 
 .fade-in.fade-third {
   -webkit-animation-delay: 2.8s;
-  animation-delay: 2.8s; }
-
-  /**
-   * Font awesome icons.
-   */
-  .article-list__item .fa,
-  .content-meta .fa,
-  .heading-lead .fa {
-    padding-right: 0.25em !important; }
+  animation-delay: 2.8s;
+}

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Zero Video - de.lin.e.ate</title>
+  <meta name="description" content="" />
+  <link rel="stylesheet" href="css/prism.css">
+
+<style>h1, h2, h3 {font-weight: 400; margin-top: 0; margin-bottom: 16px;}li {padding-bottom: 16px;}li:last-child {padding-bottom: 0;}.text-blue{color: #07a;}p{margin-top: 0;margin-bottom: 16px; line-height: 1.5;}p:last-child{margin-bottom: 0;}</style>
+
+</head>
+
+<body style="margin: 0; font-family: verdana, sans-serif; background-color: #f7f7f7;">
+
+<header style="background-color: #fff;">
+  <div style="max-width: 840px; margin: 0 auto; padding: 48px;">
+    <img src="http://delineatedesign.co.uk/images/delineate.png" width="180" />
+  </div>
+</header>
+
+<div style="max-width: 840px; margin: 0 auto; padding: 48px;">
+
+  <p>The zeroculture.co.uk theme by de.lin.e.ate has been designed and the protoype built to take advantage of <a href="http://packery.metafizzy.co/" target="_blank">Metafizzy's Packery</a> script to display zeroculture articles as items (<code class="language-markup">article-list__item</code>) of varied width and heights in a grid layout.</p>
+
+
+  <h1>The <code class="language-markup">.article-list</code></h1>
+  <p><strong>html-components/content/article-list.html</strong> <img src="http://sarahtattersall.github.io/PIPE/images/GitHub-Mark-32px.png" style="vertical-align: bottom;"> <small><a href="https://github.com/delineatedesign/project-zero/blob/gh-pages/html-components/content/article-list.html" title="article-list.html file on github" target="_blank;">view on github</a></small></p>
+
+  <p>The <code class="language-markup">article-list</code> is a parent element that contains several <code class="language-markup">article-list__item</code>s</p>
+
+</div>
+
+
+<pre><code  class="language-markup">&lt;div class="article-list"&gt;
+
+  &lt;div class="article-list__item"&gt;
+    &lt;article class="article  img-bkg-sm" style="background-image: url('http://placehold.it/600x450/');"&gt;
+      &lt;div class="article__content-absolute  text-center"&gt;
+        &lt;div class="o-pack"&gt;
+          &lt;div class="o-pack__item  u-valign-middle  u-padding-base"&gt;
+            &lt;h2 class="u-margin-0"&gt;Article Title&lt;/h2&gt;
+            &lt;a href="single.html"&gt;&lt;i class="fa  fa-book">&lt;/i&gt;Read More&lt;/a&gt;
+          &lt;/div&gt; &lt;!-- /.o-pack__item --&gt;
+        &lt;/div&gt; &lt;!-- /.o-pack --&gt;
+      &lt;/div&gt; &lt;!-- /.article__content-absolute --&gt;
+    &lt;/article&gt;
+  &lt;/div&gt; &lt;!-- /.article-list__item --&gt;
+
+&lt;/div&gt; &lt;!-- /.article-list --&gt;</code></pre>
+
+
+<div style="max-width: 840px; margin: 0 auto; padding: 48px;">
+  <p>The <code class="language-markup">article-list</code> (without Packery) appears in its default state above the footer on the <a href="http://delineatedesign.github.io/project-zero/single.html" target="_blank">single article template</a> as one row and 4 columns with items of equal width and height</p>
+
+  <p><strong>html-components/content/article-listx4.html</strong> <img src="http://sarahtattersall.github.io/PIPE/images/GitHub-Mark-32px.png" style="vertical-align: bottom;"> <small><a href="https://github.com/delineatedesign/project-zero/blob/gh-pages/html-components/content/article-listx4.html" title="article-listx4.html file on github" target="_blank;">view on github</a></small></p>
+
+
+  <h2>The Article List with Packery</h2>
+
+  <p><strong>html-components/content/article-list-packery.html</strong> <img src="http://sarahtattersall.github.io/PIPE/images/GitHub-Mark-32px.png" style="vertical-align: bottom;"> <small><a href="https://github.com/delineatedesign/project-zero/blob/gh-pages/html-components/content/article-list.html" title="article-list.html file on github" target="_blank;">view on github</a></small></p>
+
+  <p>To lay out the <code class="language-markup">article-list</code> with Packery, add the <code class="language-markup">packery</code> class to the <code class="language-markup">article-list</code> </p>
+
+
+</div>
+
+<pre><code  class="language-markup">&lt;div class="article-list  packery"&gt;
+
+  &lt;div class="article-list__item"&gt;
+    &lt;article class="article  img-bkg-md" style="background-image: url('http://placehold.it/600x450/');"&gt;
+      &lt;div class="article__content-absolute  text-center"&gt;
+        &lt;div class="o-pack"&gt;
+          &lt;div class="o-pack__item  u-valign-middle  u-padding-base"&gt;
+            &lt;h2 class="u-margin-0"&gt;Article Title&lt;/h2&gt;
+            &lt;a href="single.html"&gt;&lt;i class="fa  fa-book">&lt;/i&gt;Read More&lt;/a&gt;
+          &lt;/div&gt; &lt;!-- /.o-pack__item --&gt;
+        &lt;/div&gt; &lt;!-- /.o-pack --&gt;
+      &lt;/div&gt; &lt;!-- /.article__content-absolute --&gt;
+    &lt;/article&gt;
+  &lt;/div&gt; &lt;!-- /.article-list__item --&gt;
+
+  &lt;div class="article-list__item  w1-2"&gt;
+    &lt;article class="article  img-bkg-sm" style="background-image: url('http://placehold.it/600x450/');"&gt;
+      &lt;div class="article__content-absolute  text-center"&gt;
+        &lt;div class="o-pack"&gt;
+          &lt;div class="o-pack__item  u-valign-middle  u-padding-base"&gt;
+            &lt;h2 class="u-margin-0"&gt;Article Title&lt;/h2&gt;
+            &lt;a href="single.html"&gt;&lt;i class="fa  fa-book">&lt;/i&gt;Read More&lt;/a&gt;
+          &lt;/div&gt; &lt;!-- /.o-pack__item --&gt;
+        &lt;/div&gt; &lt;!-- /.o-pack --&gt;
+      &lt;/div&gt; &lt;!-- /.article__content-absolute --&gt;
+    &lt;/article&gt;
+  &lt;/div&gt; &lt;!-- /.article-list__item --&gt;
+
+&lt;/div&gt; &lt;!-- /.article-list --&gt;</code></pre>
+
+<div style="max-width: 840px; margin: 0 auto; padding: 48px;">
+
+  <p>The <code class="language-markup">article-list</code> with Packery appears on the <a href="http://delineatedesign.github.io/project-zero/" target="_blank">front page template</a> and the <a href="http://delineatedesign.github.io/project-zero/archive.html" target="_blank">archive template</a> as multiple rows and columns with items of varied width and height.</p>
+
+<h1>The <code class="language-markup">.article-list__item</code></h1>
+
+<p>The <code class="language-markup">article-list__item</code> is a child element of <code class="language-markup">article-list</code>.</p>
+
+<p>It contains the individual article content, including article image and title</p>
+
+
+  <p><strong>one-item_no-packery.html</strong> <img src="http://sarahtattersall.github.io/PIPE/images/GitHub-Mark-32px.png" style="vertical-align: bottom;"> <small><a href="http://delineatedesign.github.io/project-zero/one-item_no-packery.html" title="article-list.html file on github" target="_blank;">view on github</a></small></p>
+
+
+</div>
+
+<pre><code  class="language-markup">&lt;div class="article-list__item"&gt;
+&lt;article class="article  img-bkg-sm" style="background-image: url('http://placehold.it/600x450/');"&gt;
+  &lt;div class="article__content-absolute  text-center"&gt;
+    &lt;div class="o-pack"&gt;
+      &lt;div class="o-pack__item  u-valign-middle  u-padding-base"&gt;
+        &lt;h2 class="u-margin-0"&gt;Article Title&lt;/h2&gt;
+        &lt;a href="single.html"&gt;&lt;i class="fa  fa-book">&lt;/i&gt;Read More&lt;/a&gt;
+      &lt;/div&gt; &lt;!-- /.o-pack__item --&gt;
+    &lt;/div&gt; &lt;!-- /.o-pack --&gt;
+  &lt;/div&gt; &lt;!-- /.article__content-absolute --&gt;
+&lt;/article&gt;
+&lt;/div&gt; &lt;!-- /.article-list__item --&gt;</code></pre>
+
+
+<div style="max-width: 840px; margin: 0 auto; padding: 48px;">
+
+  <h2>How to change article item width and height</h2>
+
+  <p>Change the width and height of article list items with classes</p>
+
+  <h2>Width</h2>
+    <p>add width class to <code class="language-markup">&lt;div class="article-list__item"&gt;</code></p>
+
+  <ul>
+    <li><code class="language-markup">&lt;div class="article-list__item"&gt;</code>  = 25% default</li>
+    <li><code class="language-markup">&lt;div class="article-list__item  w1-2"&gt;</code> = 50%</li>
+    <li><code class="language-markup">&lt;div class="article-list__item  w3-4"&gt;</code> = 75%</li>
+    <li><code class="language-markup">&lt;div class="article-list__item  w1-1"&gt;</code> = 100%</li>
+  </ul>
+
+  <h2>Height</h2>
+<p>change <code class="language-markup">&lt;article&gt;</code>'s default <code class="language-markup">img-bkg-sm</code> height class</code></p>
+
+  <ul>
+    <li><code class="language-markup">&lt;article class="article  img-bkg-sm"&gt;</code> = 240px small/default</li>
+    <li><code class="language-markup">&lt;article class="article  img-bkg-md"&gt;</code> = 480px medium</li>
+    <li><code class="language-markup">&lt;article class="article  img-bkg-lg"&gt;</code> = 720px large</li>
+  </ul>
+
+</div>
+
+<div style="background: #000;">
+  <div style="padding: 48px;">
+    <div class="fitvid">
+      <iframe width="1920" height="1080" src="https://www.youtube.com/embed/RB8HK4OB2Fw" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+
+
+<div style="max-width: 840px; margin: 0 auto; padding: 48px;">
+
+  <h2>The CSS</h2>
+
+  <p><strong>project-zero/css/main.css</strong> <img src="http://sarahtattersall.github.io/PIPE/images/GitHub-Mark-32px.png" style="vertical-align: bottom;"> <small><a href="https://github.com/delineatedesign/project-zero/blob/gh-pages/css/main.css" title="main.css file on github" target="_blank;">view on github</a></small></p>
+
+<p>Though it will look fine without Packery, width and heights of article list items may need micro-managing to control layout that relies only on CSS.</p>
+
+  <p>Remember, if an <code class="language-markup">article-list</code> layout is controlled by Packery, Packery will override <code class="language-markup">.article-list__item</code> CSS styles with its own.
+    For example, it will add <code class="language-css">position: absolute;</code> as an inline style inside the markup to position each <code class="language-markup">.article-list__item</code> child element.</p>
+
+
+</div>
+
+<pre><code  class="language-css">/*------------------------------------------------*
+  # ARTCILE LIST ITEM
+\*------------------------------------------------*/
+
+.article-list__item {
+  position: relative;
+  width: 50%;
+  float: left;
+  background: #CCC;
+}
+
+.article-list__item.w1-1 { width:  100%; }
+
+.img-bkg-sm,
+.img-bkg-md,
+.img-bkg-lg {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+[class*="img-bkg-"] {
+  height: 240px;
+}
+
+@media screen and (min-width: 600px) {
+  .article-list__item { width: 25%; }
+  .article-list__item.w1-2 { width:  50%; }
+  .article-list__item.w3-4 { width:  75%; }
+  .article-list__item.w1-1 { width:  100%; }
+   }
+
+  .img-bkg-md { height: 480px; }
+  .img-bkg-lg { height: 720px; }
+}</code></pre>
+
+  <script src="js/vendor/jquery-1.9.1.min.js"></script>
+
+  <script src="js/vendor/fitvids.js"></script>
+  <script>
+    $(document).ready(function(){
+      // Target your .container, .wrapper, .post, etc.
+      $(".fitvid").fitVids();
+    });
+  </script>
+
+  <script src="js/vendor/prism.js"></script>
+
+</body>
+</html>
