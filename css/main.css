@@ -682,7 +682,7 @@ a.toggle-nested-scotch-panel:before {
   background-size: cover;
 }
 
-[class*="img-bkg-"] {
+.img-bkg-sm {
   height: 240px;
 }
 

@@ -12,90 +12,88 @@
   <meta name="description" content="" />
   <link rel="stylesheet" href="css/prism.css">
 
-<style>h1, h2, h3 {font-weight: 400; margin-top: 0; margin-bottom: 16px;}li {padding-bottom: 16px;}li:last-child {padding-bottom: 0;}.text-blue{color: #07a;}p{margin-top: 0;margin-bottom: 16px; line-height: 1.5;}p:last-child{margin-bottom: 0;}</style>
+<style>h1, h2, h3 {font-weight: 400; margin-top: 0; margin-bottom: 16px;}ul{padding: 0;}li {padding-bottom: 16px;}li:last-child {padding-bottom: 0;}.text-blue{color: #07a;}p{margin-top: 0;margin-bottom: 16px; line-height: 1.75;}p:last-child{margin-bottom: 0;}</style>
 
 </head>
 
-<body style="margin: 0; font-family: verdana, sans-serif; background-color: pink; line-height: 1.5;">
+<body style="margin: 0; font-family: verdana, sans-serif; font-size: 14px; line-height: 1.5;">
 
-link to userguide
-
-link to article list item no packery git code page
-link to article list item no packery demo page
-
-link to article list no packery demo page
-link to article list packery demo page
-
-
-updated css. article list items now floats instead of inline-block and uses divs not <li>
-use new stylesheet. only thing amended is list item css.
-
-removed spinner gif from inside parent article list
-
-</li>
 
 <header style="background-color: #fff;">
-  <div style="max-width: 840px; margin: 0 auto; padding: 48px;">
+  <div style="max-width: 640px; margin: 0 auto; padding: 48px 48px 0 48px ;">
     <img src="http://delineatedesign.co.uk/images/delineate.png" width="180" />
   </div>
 </header>
 
-<div style="max-width: 720px; margin: 0 auto; padding: 48px;">
+<div style="max-width: 640px; margin: 0 auto;  padding: 48px;">
 
   <p>The zeroculture.co.uk theme by de.lin.e.ate has been designed and the protoype built to take advantage of <a href="http://packery.metafizzy.co/" target="_blank">Metafizzy's Packery</a> script to display zeroculture articles as items (<code class="language-markup">article-list__item</code>) of varied width and heights in a grid layout.</p>
+  <p>The article list grid layout HTML markup <strong>is the same</strong> for both the default layout and Packery layout.</p>
+
+  <p><strong>Article list layout without Packery</strong> <a href="file:///Users/soren/Sites/project-zero/index_no-packery.html" title="main.css file on github" target="_blank;"><small>view demo</small></a></p>
+  <p><strong>Article list layout with Packery</strong> <a href="file:///Users/soren/Sites/project-zero/index.html" title="main.css file on github" target="_blank;"><small>view demo</small></a></p>
 
 
-  <h1>The <code class="language-markup">.article-list</code></h1>
-  <p><strong>html-components/content/article-list.html</strong> <img src="http://sarahtattersall.github.io/PIPE/images/GitHub-Mark-32px.png" style="vertical-align: bottom;"> <small><a href="https://github.com/delineatedesign/project-zero/blob/gh-pages/html-components/content/article-list.html" title="article-list.html file on github" target="_blank;">view on github</a></small></p>
+<p>Notice the white space in the layout without Packery</p>
+
+</div>
+<div style="max-width: 640px; margin: 0 auto;  padding: 48px;border-top: 1px solid rgba(0,0,0,0.1);">
+
+  <h2>The <code class="language-markup">.article-list</code></h2>
+  <p><strong>html-components/content/article-list.html</strong> <img src="http://sarahtattersall.github.io/PIPE/images/GitHub-Mark-32px.png" style="vertical-align: bottom;"> <small><a href="https://github.com/delineatedesign/project-zero/blob/gh-pages/html-components/content/article-list.html" title="article-list.html file on github" target="_blank;">view code on github</a></small></p>
 
   <p>The <code class="language-markup">article-list</code> is a parent element that contains several <code class="language-markup">article-list__item</code>s</p>
+
+  <pre style="margin-bottom: 24px;"><code  class="language-markup">&lt;div class="article-list"&gt;
+
+    &lt;div class="article-list__item"&gt;...&lt;/div&gt;
+    &lt;div class="article-list__item"&gt;...&lt;/div&gt;
+    &lt;div class="article-list__item"&gt;...&lt;/div&gt;
+    &lt;div class="article-list__item"&gt;...&lt;/div&gt;
+
+  &lt;/div&gt; &lt;!-- /.article-list --&gt;</code></pre>
+
+  <p>The <code class="language-markup">article-list</code> (without Packery) appears in its default state above the footer on the <a href="http://delineatedesign.github.io/project-zero/single.html" target="_blank">single article template</a> as one row and 4 columns with items of equal width and height</p>
+
+  <p><strong>html-components/content/article-listx4.html</strong> <img src="http://sarahtattersall.github.io/PIPE/images/GitHub-Mark-32px.png" style="vertical-align: bottom;"> <a href="https://github.com/delineatedesign/project-zero/blob/gh-pages/html-components/content/article-listx4.html" title="article-listx4.html file on github" target="_blank;"><small>view code on github</small></a></p>
 
 </div>
 
 
-<pre><code  class="language-markup">&lt;div class="article-list"&gt;
-
-  &lt;div class="article-list__item"&gt;...&lt;/div&gt;
-  &lt;div class="article-list__item"&gt;...&lt;/div&gt;
-  &lt;div class="article-list__item"&gt;...&lt;/div&gt;
-  &lt;div class="article-list__item"&gt;...&lt;/div&gt;
-
-&lt;/div&gt; &lt;!-- /.article-list --&gt;</code></pre>
 
 
-<div style="max-width: 840px; margin: 0 auto; padding: 48px;">
-  <p>The <code class="language-markup">article-list</code> (without Packery) appears in its default state above the footer on the <a href="http://delineatedesign.github.io/project-zero/single.html" target="_blank">single article template</a> as one row and 4 columns with items of equal width and height</p>
-
-  <p><strong>html-components/content/article-listx4.html</strong> <img src="http://sarahtattersall.github.io/PIPE/images/GitHub-Mark-32px.png" style="vertical-align: bottom;"> <small><a href="https://github.com/delineatedesign/project-zero/blob/gh-pages/html-components/content/article-listx4.html" title="article-listx4.html file on github" target="_blank;">view on github</a></small></p>
 
 
-  <h2>The Article List with Packery</h2>
+<div style="max-width: 640px; margin: 0 auto;  padding: 48px;border-top: 1px solid rgba(0,0,0,0.1);">
+
+<h2>The <code class="language-markup">.article-list</code> with Packery</h2>
+
+<p><strong>html-components/content/article-list-packery.html</strong> <img src="http://sarahtattersall.github.io/PIPE/images/GitHub-Mark-32px.png" style="vertical-align: bottom;"> <a href="https://github.com/delineatedesign/project-zero/blob/gh-pages/html-components/content/article-list-packery.html" title="article-list-packery.html file on github" target="_blank;"><small>view code on github</small></a></p>
+
 
 
   <p>To lay out the <code class="language-markup">article-list</code> with Packery, add the <code class="language-markup">packery</code> class to the <code class="language-markup">article-list</code> </p>
 
+<pre style="margin-bottom: 24px;"><code  class="language-markup">&lt;div class="article-list  packery"&gt;
 
-</div>
-
-<pre><code  class="language-markup">&lt;div class="article-list  packery"&gt;
-
+  &lt;div class="article-list__item"&gt;...&lt;/div&gt;
+  &lt;div class="article-list__item"&gt;...&lt;/div&gt;
   &lt;div class="article-list__item"&gt;...&lt;/div&gt;
   &lt;div class="article-list__item"&gt;...&lt;/div&gt;
 
 &lt;/div&gt; &lt;!-- /.article-list --&gt;</code></pre>
 
-<div style="max-width: 840px; margin: 0 auto; padding: 48px;">
 
-  <p><strong>html-components/content/article-list-packery.html</strong> <img src="http://sarahtattersall.github.io/PIPE/images/GitHub-Mark-32px.png" style="vertical-align: bottom;"> <small><a href="https://github.com/delineatedesign/project-zero/blob/gh-pages/html-components/content/article-list-packery.html" title="article-list-packery.html file on github" target="_blank;">view on github</a></small></p>
+  <p>The <code class="language-markup">article-list</code> with Packery appears on the <a href="http://delineatedesign.github.io/project-zero/" target="_blank">front page template</a> and the <a href="http://delineatedesign.github.io/project-zero/archive.html" target="_blank">archive template</a> as multiple rows and columns with items of varied width and height</p>
 
+</div>
+<div style="max-width: 640px; margin: 0 auto;  padding: 48px;border-top: 1px solid rgba(0,0,0,0.1);">
 
-  <p>The <code class="language-markup">article-list</code> with Packery appears on the <a href="http://delineatedesign.github.io/project-zero/" target="_blank">front page template</a> and the <a href="http://delineatedesign.github.io/project-zero/archive.html" target="_blank">archive template</a> as multiple rows and columns with items of varied width and height.</p>
-
-<h1>The <code class="language-markup">.article-list__item</code></h1>
+<h2>The <code class="language-markup">.article-list__item</code></h2>
 
   <p><strong>html-components/content/article-list__item.html</strong> <img src="http://sarahtattersall.github.io/PIPE/images/GitHub-Mark-32px.png" style="vertical-align: bottom;"> <small><a href="https://github.com/delineatedesign/project-zero/blob/gh-pages/html-components/content/article-list__item.html" title="article-list__item.html file on github" target="_blank;">view on github</a></small></p>
 
-<p>The <code class="language-markup">article-list__item</code> is a child element of <code class="language-markup">article-list</code>.</p>
+<p>The <code class="language-markup">article-list__item</code> is a child element of <code class="language-markup">article-list</code></p>
 
 <p>It contains the individual article content, including article image and title</p>
 
@@ -103,7 +101,7 @@ removed spinner gif from inside parent article list
 
 </div>
 
-<pre><code  class="language-markup">&lt;div class="article-list__item"&gt;
+<pre style="padding: 48px;"><code  class="language-markup">&lt;div class="article-list__item"&gt;
   &lt;article class="article  img-bkg-sm" style="background-image: url('http://placehold.it/600x450/');"&gt;
     &lt;div class="article__content-absolute  text-center"&gt;
       &lt;div class="o-pack"&gt;
@@ -117,9 +115,11 @@ removed spinner gif from inside parent article list
 &lt;/div&gt; &lt;!-- /.article-list__item --&gt;</code></pre>
 
 
-<div style="max-width: 840px; margin: 0 auto; padding: 48px;">
+<div style="max-width: 640px; margin: 0 auto; padding: 48px;">
 
   <h2>How to change article item width and height</h2>
+
+  <p>The Packery article list has items of varied width and height.</p>
 
   <p>Change the width and height of article list items with classes</p>
 
@@ -136,35 +136,18 @@ removed spinner gif from inside parent article list
   <h2>Height</h2>
 <p>change <code class="language-markup">&lt;article&gt;</code>'s default <code class="language-markup">img-bkg-sm</code> height class</code></p>
 
-  <ul>
+  <ul style="margin-bottom: 24px;">
     <li><code class="language-markup">&lt;article class="article  img-bkg-sm"&gt;</code> = 240px small/default</li>
     <li><code class="language-markup">&lt;article class="article  img-bkg-md"&gt;</code> = 480px medium</li>
     <li><code class="language-markup">&lt;article class="article  img-bkg-lg"&gt;</code> = 720px large</li>
   </ul>
 
-</div>
-
-<div style="background: #000;">
-  <div style="padding: 48px;">
-    <div class="fitvid">
-      <iframe width="1920" height="1080" src="https://www.youtube.com/embed/RB8HK4OB2Fw" frameborder="0" allowfullscreen></iframe>
-    </div>
-  </div>
-</div>
-
-
-<div style="max-width: 840px; margin: 0 auto; padding: 48px;">
-
   <h2>The CSS</h2>
 
   <p><strong>project-zero/css/main.css</strong> <img src="http://sarahtattersall.github.io/PIPE/images/GitHub-Mark-32px.png" style="vertical-align: bottom;"> <small><a href="https://github.com/delineatedesign/project-zero/blob/gh-pages/css/main.css" title="main.css file on github" target="_blank;">view on github</a></small></p>
 
-<p>Though it will look fine without Packery, width and heights of article list items may need micro-managing to control layout that relies only on CSS.</p>
 
-
-</div>
-
-<pre><code  class="language-css">/*------------------------------------------------*
+<pre style="margin-bottom: 24px;"><code  class="language-css">/*------------------------------------------------*
   # ARTCILE LIST ITEM
 \*------------------------------------------------*/
 
@@ -186,7 +169,7 @@ removed spinner gif from inside parent article list
   background-size: cover;
 }
 
-[class*="img-bkg-"] {
+.img-bkg-sm {
   height: 240px;
 }
 
@@ -201,18 +184,28 @@ removed spinner gif from inside parent article list
   .img-bkg-lg { height: 720px; }
 }</code></pre>
 
-<div style="max-width: 840px; margin: 0 auto; padding: 48px;">
-
-<p>Though an <code class="language-markup">article-list</code> will look fine without Packery, width and heights of article items may need micro-managing to control layout that relies only on CSS</p>
-<p><strong>ARTICLE LIST LAYOUT WITHOUT PACKERY</strong> <small><a href="https://github.com/delineatedesign/project-zero/blob/gh-pages/css/main.css" title="main.css file on github" target="_blank;">view demo</a></small></p>
-<p><strong>ARTICLE LIST LAYOUT WITH PACKERY</strong> <a href="http://delineatedesign.github.io/project-zero/" title="main.css file on github" target="_blank;">demo</a></p>
+<p>Though an <code class="language-markup">article-list</code> will look fine without Packery, width and heights of article items may need micro-managing to control layout that relies only on CSS to control the white space.</p>
 
 
-  <p>Remember, if an <code class="language-markup">article-list</code> layout is controlled by Packery, Packery will override <code class="language-markup">.article-list__item</code> CSS styles with its own.
+  <p>If an <code class="language-markup">article-list</code> layout is controlled by Packery, Packery will override <code class="language-markup">.article-list__item</code> CSS styles with its own.
     For example, it will add <code class="language-css">position: absolute;</code> as an inline style inside the markup to position each <code class="language-markup">.article-list__item</code> child element.</p>
 
 
 </div>
+
+
+
+
+
+
+<div style="background: #000;">
+  <div style="padding: 48px;">
+    <div class="fitvid">
+      <iframe width="1920" height="1080" src="https://www.youtube.com/embed/RB8HK4OB2Fw" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+
 
   <script src="js/vendor/jquery-1.9.1.min.js"></script>
 
