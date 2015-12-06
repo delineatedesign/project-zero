@@ -623,16 +623,14 @@ a.toggle-nested-scotch-panel:before {
  * These are the classes applied to the articles wrapper.
  *
  */
-.article-list {
+.article-list,
+.packery {
   background-color: #FFFFFF;
   overflow: hidden;
-}
-
-.packery {
-  -webkit-animation: KEYFRAME-NAME 5s ;
-  -moz-animation:    KEYFRAME-NAME 5s ;
-  -o-animation:      KEYFRAME-NAME 5s ;
-  animation:         KEYFRAME-NAME 5s ;
+  -webkit-animation: opacity-reveal 5s ;
+  -moz-animation:    opacity-reveal 5s ;
+  -o-animation:      opacity-reveal 5s ;
+  animation:         opacity-reveal 5s ;
 }
 
 /* clearfix */
@@ -643,19 +641,19 @@ a.toggle-nested-scotch-panel:before {
   clear: both;
 }
 
-  @-webkit-keyframes KEYFRAME-NAME {
+  @-webkit-keyframes opacity-reveal {
     0%   { opacity: 0; }
     100% { opacity: 1; }
   }
-  @-moz-keyframes KEYFRAME-NAME {
+  @-moz-keyframes opacity-reveal {
     0%   { opacity: 0; }
     100% { opacity: 1; }
   }
-  @-o-keyframes KEYFRAME-NAME {
+  @-o-keyframes opacity-reveal {
     0%   { opacity: 0; }
     100% { opacity: 1; }
   }
-  @keyframes KEYFRAME-NAME {
+  @keyframes opacity-reveal {
     0%   { opacity: 0; }
     100% { opacity: 1; }
   }
